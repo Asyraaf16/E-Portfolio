@@ -466,6 +466,7 @@ nav button {
 }
 .input-group {
     display: flex;
+    margin-top: 10px;
     gap: 10px; /* Adds space between name and email */
 }
 
