@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acap E-portfolio</title>
+    <script src="https://kit.fontawesome.com/491b6da649.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="nav" class="container-overlay">
+        <div class="overlay-content">
+            <a href="#about-me">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Get in Touch</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        </div>
+        
+    </div>
+    <div id="header">
+        <nav>
+            <h1 style="font-family: Limelight;">Asyraaf</h1>
+            <i style="cursor: pointer;" onclick="openNav()" class="fa-solid fa-chevron-down fa-fade"></i>
+            <a href="#contact"><button>Hire Me</button></a>
+        </nav>
+        <div class="hero-content">
+            <p>WELCOME TO MY WORLD</p>
+            <h1>I'm a Developer</h1>
+            <p>Based in Kota Bharu, Kelantan</p>
+            <a href="Assets/Resume.pdf" download class="cv-button">Download CV</a>
+         </div>
+    </div>
+    <!-------------about------------>
+    <div id="about-me">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Assets/acap.jpg" alt="Me" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <h3>Hello, i'm Muhammad Asyraaf</h3>
+                    <p>
+                        I combine my passion for user-centered design with cutting-edge development technologies to create innovative and impactful solutions. 
+                        With a strong foundation in Computer Science, I strive to build applications that are not only functional but also intuitive and engaging.
+                        Over the course of my journey, I have collaborated with various projects and teams, delivering solutions that drive results and exceed expectations. 
+                        I am committed to meeting deadlines, staying within budget, and ensuring client satisfaction—because excellence is not just a goal, it's a standard.
+                        Bringing ideas to life with clean code and seamless user experiences is my mission. The world of technology is ever-evolving, and I am excited to grow, innovate, and push boundaries along the way.
+                        <br>Let's build something amazing together! 🚀
+                    </p>
+                    <div class="sub-content-title">
+                        <p class="sub-content-links" onclick="opencontent('skills')">Skills</p>
+                        <p class="sub-content-links" onclick="opencontent('education')">Education</p>
+                        <p class="sub-content-links" onclick="opencontent('experience')">Works Experience</p>
+                    </div>
+                    <div id="skills" class="sub-contents">
+                        <ul>
+                            <li><span>Web Development</span><br>
+                                Crafting dynamic and responsive web applications using modern frameworks and technologies.
+                                <br>Technologies: HTML, CSS, JavaScript, React
+                                <br>Tools: Git, VS Code, MyPHPAdmin
+                            </li>
+                            <li><span>Data Visualization</span><br>
+                                Transforming complex data into insightful, interactive visual representations.
+                                <br>Technologies: Matplotlib, Seaborn, Power BI
+                                <br>Skills: Dashboard creation, Interactive charts
+                            </li>
+                            <li><span>Machine Learning</span><br>
+                                Building intelligent models that learn from data and make accurate predictions.
+                                <br>Technologies: Scikit-learn, Genetic Algorithm (GA)
+                                <br>Skills: Supervised & Unsupervised Learning, Deep Learning, Natural Language Processing (NLP)
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="education" class="sub-contents">
+                        <ul>
+                            <li><span>Diploma in Computer Science</span><br>
+                                <em>University Technology MARA (UiTM) Campus Machang, Kelantan</em>
+                                <br>CGPA: 3.64
+                            </li>
+                            <li><span>Bachelor Degree in Computer Science (Hons.)</span><br>
+                                <em>University Technology MARA (UiTM) Campus Kuala Terengganu, Terengganu</em>
+                                <br>CGPA: 3.39 | GPA: 3.65
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="experience" class="sub-contents">
+                        <ul>
+                            <li><span>Internship: <em>FH Training Center</em></span><br>
+                                Have experience as a technical trainer, conducting workshops on Microsoft Office, 
+                                coding using <b>Scratch</b>, IoT development using <b>Arduino</b>, and mobile app creation using 
+                                MIT.Do graphic design such as creating posters, and logo for the company using <b>Canva</b>, 
+                                <b>Adobe Photoshop</b>, and <b>Adobe Illustrator</b>. 
+                            </li>                    
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- tech skills -->
+ <div id="slider">
+    <!-- <div class="tech-title">
+        <h2>Technical Skills & Proficiencies</h2>
+    </div> -->
+    <div class="slider-track">
+        <div class="swiper-slide"><img src="assets/python.png" alt="Python"></div>
+        <div class="swiper-slide"><img src="assets/css.png" alt="CSS"></div>
+        <div class="swiper-slide"><img src="assets/js.png" alt="JavaScript"></div>
+        <div class="swiper-slide"><img src="assets/html.png" alt="HTML"></div>
+        <div class="swiper-slide"><img src="assets/java.png" alt="Java"></div>
+        <div class="swiper-slide"><img src="assets/pandas.png" alt="Pandas"></div>
+        <div class="swiper-slide"><img src="assets/php.png" alt="PHP"></div>
+        <div class="swiper-slide"><img src="assets/dbeaver.png" alt="DBeaver"></div>
+        <div class="swiper-slide"><img src="assets/powerBI.png" alt="PowerBI"></div>
+        <div class="swiper-slide"><img src="assets/mysql.png" alt="MySQL"></div>
+        <div class="swiper-slide"><img src="assets/bt.png" alt="Bootstrap"></div>
+        <!-- Duplicate logos for seamless loop -->
+        <div class="swiper-slide"><img src="assets/python.png" alt="Python"></div>
+        <div class="swiper-slide"><img src="assets/css.png" alt="CSS"></div>
+        <div class="swiper-slide"><img src="assets/js.png" alt="JavaScript"></div>
+        <div class="swiper-slide"><img src="assets/html.png" alt="HTML"></div>
+        <div class="swiper-slide"><img src="assets/java.png" alt="Java"></div>
+        <div class="swiper-slide"><img src="assets/pandas.png" alt="Pandas"></div>
+        <div class="swiper-slide"><img src="assets/php.png" alt="PHP"></div>
+        <div class="swiper-slide"><img src="assets/dbeaver.png" alt="DBeaver"></div>
+        <div class="swiper-slide"><img src="assets/powerBI.png" alt="PowerBI"></div>
+        <div class="swiper-slide"><img src="assets/mysql.png" alt="MySQL"></div>
+        <div class="swiper-slide"><img src="assets/bt.png" alt="Bootstrap"></div>
+    </div>
+ </div>
+<!-- services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Web Development 🖥️</h2>
+                    <p>
+                        Creating modern, responsive, and user-friendly websites tailored to your needs.
+                    </p>
+                    <a href="#">Learn more <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div>
+                    <h2>Data Visualization 📊</h2>
+                    <p>
+                        Transforming complex data into clear and engaging visuals for better decision-making.
+                    </p>
+                    <a href="#">Learn more <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div>
+                    <h2>Data Analysis 📈</h2>
+                    <p>
+                        Turning raw data into meaningful insights for smarter business decisions.
+                    </p>
+                    <a href="#">Learn more <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div>
+                    <h2>Machine Learning 🤖</h2>
+                    <p>
+                        Developing a machine learning model and provide solution.
+                    </p>
+                    <a href="#">Learn more <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------Projects---------- -->
+     <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Side Projects</h1>
+            <p>Here are a few of past projects i've worked on by exploring creativity through hands-on development.<br> These projects showcase my ability to solve real-world problems with technology.</p>
+            <div class="projects-list">
+                <div class="project">
+                    <img src="/Assets/buroq express.png">
+                    <div class="layer">
+                        <h3>Buroq's Express</h3>
+                        <p>
+                            Parcel courier management system.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="">
+                    <div class="layer">
+                        <h3>Big Brain Bookstore </h3>
+                        <p></p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="">
+                    <div class="layer">
+                        <h3>Optimal Demand Response of Solar Energy Generation Using Genetic Algorithm (GA)</h3>
+                        <p></p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="">
+                    <div class="layer">
+                        <h3>Sentiment Analysis on Tiktok as E-Commerce</h3>
+                        <p></p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+     </div>
+    <!-- -----------Contact---------- -->
+    <div id="contact">
+        <div class="container">
+                <div class="contact-form">
+                    <h1 class="sub-title">Get in Touch</h1>
+                    <p>Send me a note, and let's get started on your project today!</p>
+                    <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+                        <div class="input-group">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Send Message <i class="fa-regular fa-paper-plane"></i></button>
+                    </form>
+                </div>
+                <div class="contact-social">
+                    <div class="social-icon">
+                        <a href="mailto:masyraaf886@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/muhammad-asyraaf-916a07241/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Asyraaf16" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/asyrfadlan?igsh=a2o3bWpieTF6N3oy&utm_source=qr" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <p>Copyright © 2025 <span>Asyraaf.</span> All Rights Reserved.</p>
+                </div>
+                <button onclick="scrollToTop()" class="back-to-top-btn">
+                    <i class="fa-regular fa-circle-up"></i>
+                </button>
+                
+        </div>
+    </div>
+
+    <script>
+        var swiper = new Swiper('.swiper', {
+            slidesPerView: 5,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+    <script>
+        var contentLinks = document.getElementsByClassName("sub-content-links");
+        var contents = document.getElementsByClassName("sub-contents");
+
+        function opencontent(tabname){
+            for(contentLink of contentLinks){
+                contentLink.classList.remove("active-link");
+            }
+            for(content of contents){
+                content.classList.remove("active-cont");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-cont");
+        }
+    </script>
+    <script>
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+    </script>
+    <script>
+        function openNav() {
+          document.getElementById("nav").classList.add("active");
+        }
+        
+        function closeNav() {
+          document.getElementById("nav").classList.remove("active");
+        }
+        </script>
+</body>
+</html>
